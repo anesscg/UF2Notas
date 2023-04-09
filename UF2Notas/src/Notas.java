@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Notas {
   
-	double uf1, uf2, uf3;
+	double uni1, uni2, uni3;
 	double acu1, acu2, acu3, def;
 	
 	Scanner entrada = new Scanner(System.in);
@@ -21,20 +21,20 @@ public class Notas {
 	
 	public void IngresaNotas() {
 		
-		System.out.println("ingrese las notas del estudiante");
+		System.out.println("ingrese las notas del estudiante de cada unidad formativa");
 		
 		System.out.print("ingrese nota 1: ");
 		
-		uf1= entrada.nextDouble();
+		uni1= entrada.nextDouble();
 
 		
 		
 		System.out.print("ingrese nota 2: ");
 		
-		uf2= entrada.nextDouble();
+		uni2= entrada.nextDouble();
 		System.out.print("ingrese nota 3: ");
 		
-		uf3= entrada.nextDouble();
+		uni3= entrada.nextDouble();
 		
 	
 	}
@@ -46,20 +46,20 @@ public class Notas {
 	
 	public void comprobarcion(){
 		
-		if (uf1>10) {
+		if (uni1>10) {
 			System.out.println(" nota1 mal introducida");
 			
 		}else {
 			System.out.println(" nota1 correcta");
 		}
 		
-		if (uf2>10) {
+		if (uni2>10) {
 			System.out.println(" nota2 mal introducida");
 			
 		}else {
 			System.out.println(" nota2 correcta");
 		}
-		if (uf3>10) {
+		if (uni3>10) {
 			System.out.println(" nota3 mal introducida");
 			
 		}else {
@@ -73,9 +73,9 @@ public class Notas {
 	
 	
 	public void Calculonotas() {
-		acu1= uf1*0.35;
-		acu2 = uf2 * 0.35;
-		acu3 = uf3 * 0.30;
+		acu1= uni1*0.35;
+		acu2 = uni2 * 0.35;
+		acu3 = uni3 * 0.30;
 		
 		def = acu1 + acu2+ acu3;
 		
@@ -85,13 +85,13 @@ public class Notas {
 	public void Mostrar() {
 	
 		System.out.println(" notas introducidas son:");
-		System.out.println(" nota1 = " + uf1);
-		System.out.println(" nota2 = " + uf2);
-		System.out.println(" nota3 = " + uf3);
+		System.out.println(" nota1 = " + uni1);
+		System.out.println(" nota2 = " + uni2);
+		System.out.println(" nota3 = " + uni3);
 		
-		System.out.println(" acumuado 1 = "+ acu1);
-		System.out.println(" acumuado 2 = "+ acu2);
-		System.out.println(" acumuado 3 = "+ acu3);
+		System.out.println(" acumulado 1 = "+ acu1);
+		System.out.println(" acumulado 2 = "+ acu2);
+		System.out.println(" acumulado 3 = "+ acu3);
 		
 		System.out.println(" nota definitiva es = "+ def);
 		
